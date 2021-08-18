@@ -1,15 +1,155 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+#non versioned files (manually)
+nv*
+non_versioned/
+tmp/debugHTML.html
+
+#custom
+homolog/
+.htaccess
+debug.log
+error_log
+upload/
+temp/
+temp.js
+temp.html
+temp.php
+*.map.js
+*.map.ts
+*.js.map
+*.map
+.vscode
+.idea
+test/
+example.php
+
+#Copy files
+#
+*Copy.*
+*Cópia.*
+* copy
+*copy.js
+*cópia.js
+*copy.ts
+*cópia.ts
+*copy.tsx
+*cópia.tsx
+
+# Git comparing history file
+#
+
+*.BASE.js
+*.BASE.ts
+*.BASE.tsx
+*.BASE.json
+
+# Declaration
+*.BASE.d.js
+*.BASE.d.ts
+*.BASE.d.tsx
+*.BASE.d.json
+
+
+*.LOCAL.js
+*.LOCAL.ts
+*.LOCAL.tsx
+*.LOCAL.json
+
+# Declaration
+*.LOCAL.d.js
+*.LOCAL.d.ts
+*.LOCAL.d.tsx
+*.LOCAL.d.json
+
+
+
+*.REMOTE.js
+*.REMOTE.ts
+*.REMOTE.tsx
+*.REMOTE.json
+
+# Declaration
+*.REMOTE.d.js
+*.REMOTE.d.ts
+*.REMOTE.d.tsx
+*.REMOTE.d.json
+
+# Merged
+*~merged
+.merge_file_*
+
+
+# Git comparing history file
+#
+
+#temp.json
+
+# OSX
+#
+.DS_Store
+
+# Xcode
+#
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+
+# Android/IntelliJ
+#
+.gradle
+local.properties
+*.iml
+
+# Composer
+vendor/
+
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# BUCK
+buck-out/
+\.buckd/
+*.keystore
+!debug.keystore
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/
+
+*/fastlane/report.xml
+*/fastlane/Preview.html
+*/fastlane/screenshots
+
+# Bundle artifact
+*.jsbundle
+
+# CocoaPods
+/ios/Pods/
 
 # dependencies
-/node_modules
 /.pnp
 .pnp.js
 
 # testing
 /coverage
-
-# production
-/build
 
 # misc
 .DS_Store
