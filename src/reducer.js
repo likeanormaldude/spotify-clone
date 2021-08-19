@@ -1,11 +1,13 @@
+const staticToken =
+  "BQAOKC06aatBWZehHXRCThQA2IFUnOoyYfAmrqRfMxwJgV_I4i…HDX1v0vews_4GcnVfASwQMwCHn50huJDolZhkYmJJ7Y81e3YE";
+
 export const initialState = {
   user: null,
   playlists: [],
   playing: false,
   item: null,
   // Remove the static token after finishing developing
-  token:
-    "BQAOKC06aatBWZehHXRCThQA2IFUnOoyYfAmrqRfMxwJgV_I4i…HDX1v0vews_4GcnVfASwQMwCHn50huJDolZhkYmJJ7Y81e3YE",
+  token: null,
 };
 
 const reducer = (state, action) => {
@@ -20,6 +22,11 @@ const reducer = (state, action) => {
       return {
         ...state,
         token: action.token,
+      };
+    case "SET_PLAYLISTS":
+      return {
+        ...state,
+        playlists: action.playlists,
       };
 
     default:

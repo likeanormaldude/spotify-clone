@@ -36,7 +36,9 @@ function App() {
     console.log("I have a token >> ", token);
   }, []);
 
-  console.log("hey user!", user);
+  spotify.getUserPlaylists().then((playlists) => {
+    dispatch({ type: "SET_PLAYLISTS", playlists });
+  });
 
   return (
     <div className="app">
