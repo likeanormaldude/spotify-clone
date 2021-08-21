@@ -36,9 +36,23 @@ function App() {
     console.log("I have a token >> ", token);
   }, []);
 
-  spotify.getUserPlaylists().then((playlists) => {
-    dispatch({ type: "SET_PLAYLISTS", playlists });
-  });
+  useEffect(() => {
+    if (token !== null) {
+      console.log("here", token);
+
+      spotify.getUserPlaylists().then((playlists) => {
+        dispatch({ type: "SET_PLAYLISTS", playlists });
+      });
+
+      spotify.getPlaylist("37i9dQZEVXcI9HScciO6fc").then((response) => {
+        let x = 1;
+        dispatch({
+          type: "SET_DISCOVER_WEEKLY",
+          discover_weekly: response,
+        });
+      });
+    }
+  }, [token]);
 
   return (
     <div className="app">
