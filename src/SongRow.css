@@ -4,6 +4,9 @@
   display: flex;
   align-items: center;
   color: white;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
 
 .songRow:last-child {
@@ -12,7 +15,7 @@
 
 .songRow:hover {
   cursor: pointer;
-  background-color: black;
+  background-color: rgba(255, 255, 255, 0.1);
   opacity: 0.8;
 }
 
@@ -42,8 +45,9 @@
   height: 40px;
   width: 30px;
   right: 0.25rem;
-  margin-right: 12px;
+  margin-right: 20px;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   font-family: sans-serif;
 }

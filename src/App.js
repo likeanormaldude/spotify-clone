@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { useEffect } from "react";
 import "./App.css";
 import Login from "./Login";
@@ -11,7 +12,7 @@ import { getTokenFromUrl } from "./spotify";
 const spotify = new SpotifyWebApi();
 
 function App() {
-  const [{ user, token }, dispatch] = useDataLayerValue();
+  const [{ token }, dispatch] = useDataLayerValue();
 
   useEffect(() => {
     const hash = getTokenFromUrl();
@@ -45,7 +46,6 @@ function App() {
       });
 
       spotify.getPlaylist("37i9dQZEVXcI9HScciO6fc").then((response) => {
-        let x = 1;
         dispatch({
           type: "SET_DISCOVER_WEEKLY",
           discover_weekly: response,
