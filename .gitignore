@@ -25,14 +25,14 @@ example.php
 #Copy files
 #
 *Copy.*
-*Cópia.*
+*Cï¿½pia.*
 * copy
 *copy.js
-*cópia.js
+*cï¿½pia.js
 *copy.ts
-*cópia.ts
+*cï¿½pia.ts
 *copy.tsx
-*cópia.tsx
+*cï¿½pia.tsx
 
 # Git comparing history file
 #
@@ -161,4 +161,6 @@ buck-out/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.vercel
+
 .vercel
