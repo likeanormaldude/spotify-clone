@@ -1,9 +1,11 @@
+require("dotenv/config");
 // https://developer.spotify.com/
 // documentation/web-playback-sdk/quick-start/#
 
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 
-const redirectUri = "http://localhost:3000";
+const redirectUri = String(process.env.REACT_APP_REDIRECT_URI);
+console.log("aqui", redirectUri);
 
 const clientId = "5f0b9d6def104213886cd84a90861d8b";
 
